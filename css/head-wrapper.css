@@ -1,0 +1,197 @@
+#headContent {
+    width: 1226px;
+    height: 100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.logo {
+    float: left;
+    width: 55px;
+    height: 55px;
+    background-color: rgb(255, 102, 0);
+    margin-top: 22.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo:hover::before {
+    left: 15px;
+}
+
+.logo:hover::after {
+    left: 80px;
+}
+
+.logo::before {
+    font-family: iconfont;
+    font-size: 25px;
+    color: white;
+    content: '\e659';
+    position: absolute;
+    left: -30px;
+    line-height: 55px;
+    transition: left 0.2s;
+}
+
+.logo::after {
+    font-family: iconfont;
+    font-size: 35px;
+    color: white;
+    content: '\e649';
+    position: absolute;
+    left: 10px;
+    line-height: 55px;
+    transition: left 0.2s;
+}
+
+.headMiddleContent,.headMContentItem{
+    float: left;
+    line-height: 100px;
+}
+
+#headContent>:nth-child(2){
+    margin-left: 179px;
+}
+
+.headMiddleContent a{
+    font-size: 16px;
+    color: #333;
+    padding: 26px 10px 38px;
+}
+
+.headMiddleContent a:hover{
+    color: rgb(255, 102, 0);
+}
+
+.headRightContent{
+    font-family: iconfont;
+    float: right;
+    width: 296px;
+    height: 50px;
+    margin:25px 0;
+}
+
+.headRightContent input{
+    float: left;
+    width: 244px;
+    height:50px;
+    font-size: 14px;
+    color: gray;
+    padding-left: 10px;
+    border:1px solid rgb(206, 206, 206);
+    box-sizing: border-box;
+    border-right: none;
+}
+
+input:focus,input:focus+.search{
+    outline: none;
+    border-color: rgb(255, 102, 0);
+}
+
+.search{
+    float: left;
+    border:1px solid rgb(206, 206, 206);
+    display: block;
+    width: 52px;
+    height:50px;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+    color: #616161;
+    font-size: 25px;
+}
+
+.search:hover
+{
+    border-color: rgb(255, 102, 0);
+    color: white;
+    background-color: rgb(255, 102, 0);
+} 
+
+#headContent>:nth-child(2):hover .itemContent{
+    height: 250px;
+}
+
+.itemContent{
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    /* border: 1px solid rgb(206, 206, 206); */
+    box-shadow: 0px 1px 5px rgb(128, 128, 128,0.5);
+    top: 100px;
+    left: 0;
+    transition: height 0.5s;
+    overflow: hidden;
+    position: absolute;
+    z-index: 50;
+    box-sizing: border-box;
+}
+
+.itemContent img{
+    width: 160px;
+    height: 110px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.itemContent .decoration{
+    width: 1px;
+    height: 110px;
+    background-color: rgb(206, 206, 206);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.itemContent ul{
+    padding-left: 173px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.itemContent ul li{
+    float: left;
+    margin:45px auto 5px;
+    text-align: center;
+}
+
+.itemContent ul span{
+    display: block;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.itemContent .jiage{
+    color: red;
+}
+
+.xmsjl:hover~.itemContent .xmsj{
+    z-index: 100;
+}
+
+.hmsjl:hover~.itemContent .hmsj{
+    z-index: 100;
+}
+
+.dsl:hover~.itemContent .ds{
+    z-index: 100;
+}
+
+.bjbl:hover~.itemContent .bjb{
+    z-index: 100;
+}
+
+.jdl:hover~.itemContent .jd{
+    z-index: 100;
+}
+
+.lyql:hover~.itemContent .lyq{
+    z-index: 100;
+}
+
+.znyjl:hover~.itemContent .znyj{
+    z-index: 100;
+}

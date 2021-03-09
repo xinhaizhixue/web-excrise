@@ -1,0 +1,133 @@
+header {
+    background-color: rgb(51, 51, 51,0.9);
+    width: 100%;
+    min-width: 1226px;
+    height: 40px;
+    color: #b0b0b0;
+    font-size: 12px;
+    border-top: 1px solid #b3b7bd;
+    position: relative;
+    z-index: 10;
+}
+
+#headCenter {
+    width: 1226px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+#headLeftCenter,
+#headLeftCenter li {
+    float: left;
+    line-height: 40px;
+}
+
+.download {
+    width: 45px;
+}
+
+.qrCode {
+    width: 124px;
+    height: 0px;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    box-shadow: 0 1px 5px #aaa;
+    margin-left: -39.5px;
+    overflow: hidden;
+    transition: height 0.3s;
+    background-color: white;
+    position: relative;
+    z-index: 100;
+}
+
+.download:hover .qrCode {
+    height: 148px;
+}
+
+.download:hover .trangle {
+    display: block;
+}
+
+.qrCode img {
+    width: 90px;
+    height: 90px;
+    margin: 18px 17px 12px;
+}
+
+.trangle {
+    width: 0px;
+    height: 0px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    margin-left: 14.5px;
+    margin-top: -16px;
+    display: none;
+}
+
+.decoration {
+    width: 1px;
+    height: 13px;
+    margin: 13px 8px;
+    background-color: #424242;
+}
+
+#headRightCenter {
+    float: right;
+}
+
+#headRightCenter li {
+    float: left;
+    line-height: 40px;
+}
+
+.headLShopItem {
+    width: 120px;
+    text-align: center;
+    background-color: #3f423f;
+    margin-left: 16px;
+    position: relative;
+}
+
+.headLShopItem:hover #box {
+    height: 100px;
+}
+
+.headLShopItem:hover .aHeadLShopItem {
+    color: rgb(255, 102, 0);
+    background-color: white;
+}
+
+#headCenter a {
+    display: block;
+    height: 40px;
+}
+
+.aHeadRNavItem:hover,
+.aHeadLNavItem:hover {
+    color: white;
+}
+
+.aHeadLShopItem::before {
+    font-family: iconfont;
+    content: "\e63b";
+}
+
+#box {
+    width: 360px;
+    height: 0px;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 40px;
+    left: -240px;
+    font-size: 15px;
+    box-shadow: 0px 1px 2px rgb(0, 0, 0, 0.3);
+    color: black;
+    line-height: 100px;
+    transition: height 0.3s;
+    z-index: 100;
+}
