@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shotcut icon" href="icon.png" type="image/x-icon">
+    <title>钢琴键</title>
+    <script src="src/blockly-master/blockly_compressed.js"></script>
+    <script src="src/blockly-master/blocks_compressed.js"></script>
+    <script src="src/blockly-master/msg/js/en.js"></script>
+    <script src="src/blockly-master/javascript_compressed.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/head-wrapper.css">
+    <link rel="stylesheet" href="css/top-bar.css">
+    <link rel="stylesheet" href="css/3d.css">
+</head>
+
+<body>
+    <canvas class="bubble"></canvas>
+    <header>
+        <div id="headCenter">
+            <ul id="headLeftCenter">
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">游戏商城</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">王者荣耀</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">LOL</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">云服务</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">氪金</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">英雄</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">皮肤</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">组团购买</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">段位显示</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">协议规则</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem download">
+                    <a href="javascript:;" class="aHeadRNavItem">下载app
+                        <div class="trangle"></div>
+                        <div class="qrCode">
+                            <img src="src/picture/mi/qrcode.png" alt="qrcode">
+                            游戏商城APP
+                        </div>
+                    </a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headRNavItem">
+                    <a href="javascript:;" class="aHeadRNavItem">Select Location</a>
+                </li>
+            </ul>
+            <ul id="headRightCenter">
+                <li class="headLNavItem">
+                    <a href="javascript:;" class="aHeadLNavItem">登录</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headLNavItem">
+                    <a href="javascript:;" class="aHeadLNavItem">注册</a>
+                </li>
+                <li class="decoration"></li>
+                <li class="headLNavItem">
+                    <a href="javascript:;" class="aHeadLNavItem">消息通知</a>
+                </li>
+                <li class="headLShopItem">
+                    <a class="aHeadLShopItem" href="javascript:;">购物（0）</a>
+                    <div id="box">
+                        <span>购物车中还没有皮肤，赶紧选购吧!</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="headContent">
+            <div class="logo">
+            </div>
+            <ul class="headMiddleContent">
+                <li class="headMContentItem xmsjl">
+                    <a href="javascript:;">游戏手机</a>
+                </li>
+                <li class="headMContentItem hmsjl">
+                    <a href="javascript:;">电子书</a>
+                </li>
+                <li class="headMContentItem dsl">
+                    <a href="javascript:;">电视</a>
+                </li>
+                <li class="headMContentItem bjbl">
+                    <a href="javascript:;">笔记本</a>
+                </li>
+                <li class="headMContentItem jdl">
+                    <a href="javascript:;">家电</a>
+                </li>
+                <li class="headMContentItem lyql">
+                    <a href="javascript:;">路由器</a>
+                </li>
+                <li class="headMContentItem znyj">
+                    <a href="javascript:;">智能硬件</a>
+                </li>
+                <div class="itemContent">
+                    <ul class="xmsj">
+                        <li>
+                            <img src="src/picture/mi/1.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/1.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/1.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/1.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/1.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="hmsj">
+                        <li>
+                            <img src="src/picture/mi/2.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/2.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/2.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/2.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/2.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="ds">
+                        <li>
+                            <img src="src/picture/mi/3.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/3.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/3.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/3.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/3.jpeg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="bjb">
+                        <li>
+                            <img src="src/picture/mi/4.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/4.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/4.jpg" alt="">
+                            <span>小米11</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/4.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/4.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="jd">
+                        <li>
+                            <img src="src/picture/mi/5.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/5.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/5.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/5.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/5.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="lyq">
+                        <li>
+                            <img src="src/picture/mi/6.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/6.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/6.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/6.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/6.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                    <ul class="znyj">
+                        <li>
+                            <img src="src/picture/mi/7.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/7.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/7.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/7.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                        <li class="decoration"></li>
+                        <li>
+                            <img src="src/picture/mi/7.jpg" alt="">
+                            <span>iphone 200</span>
+                            <span class="jiage">3999元起</span>
+                        </li>
+                    </ul>
+                </div>
+            </ul>
+            <ul class="headMiddleContent">
+                <li class="headMContentItem">
+                    <a href="javascript:;">服务</a>
+                </li>
+                <li class="headMContentItem">
+                    <a href="javascript:;">社区</a>
+                </li>
+            </ul>
+            <div class="headRightContent">
+                <input type="text" value="【new】新英雄来了">
+                <a href="javascript:;" class="search iconfont">&#xe699;</a>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <button class="mode-maker mdl-button" id="edit">Edit</button>
+        <button class="mode-edit mdl-button mdl-js-button" id="done">Done</button>
+        <button class="mode-blockly mdl-button mdl-js-button" id="save">Save</button>
+        <p class="hint mode-edit">Tap any button to edit its code. <br />When complete, press Done.</p>
+
+        <div class="maker">
+            <div>
+                <div class="button mdl-color--amber-500">1</div>
+                <div class="button mdl-color--yellow-500">2</div>
+                <div class="button mdl-color--lime-500">3</div>
+            </div>
+            <div>
+                <div class="button mdl-color--pink-500">4</div>
+                <div class="button mdl-color--red-500">5</div>
+                <div class="button mdl-color--light-green-500">6</div>
+            </div>
+            <div>
+                <div class="button mdl-color--cyan-500">7</div>
+                <div class="button mdl-color--teal-500">8</div>
+                <div class="button mdl-color--green-500">9</div>
+            </div>
+        </div>
+
+        <div class="blockly-editor">
+            <div id="blocklyDiv" style="height: 480px; width: 400px;"></div>
+            <xml id="toolbox" style="display: none">
+                <block type="controls_repeat_ext">
+                    <value name="TIMES">
+                        <shadow type="math_number">
+                            <field name="NUM">5</field>
+                        </shadow>
+                    </value>
+                </block>
+                <block type="play_sound"></block>
+            </xml>
+        </div>
+
+        <script src="scripts/sound_blocks.js"></script>
+        <script src="scripts/music_maker.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/canvas.js"></script>
+    </main>
+    <div class="threed">
+        <img src="src/picture/mi/3d1.jpeg" alt="">
+        <img src="src/picture/mi/3d2.jpeg" alt="">
+        <img src="src/picture/mi/3d3.jpeg" alt="">
+        <img src="src/picture/mi/3d4.jpeg" alt="">
+        <img src="src/picture/mi/3d5.jpeg" alt="">
+        <img src="src/picture/mi/3d6.jpeg" alt="">
+    </div>
+    
+</body>
+
+</html>
